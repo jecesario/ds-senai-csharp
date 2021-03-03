@@ -1,0 +1,27 @@
+Exercícios: Lembrando comentários e indentação são muito importantes
+
+1) O código abaixo funciona? Porque não? Corrija os erros que encontrar.
+static void main(string [] args)
+{
+Const imposto
+Imposto := 0,21;
+double valor sem imposto;
+valor sem imposto = 23.5;
+double resultado;
+resultado = imposto * valor sem imposto;
+Console.Writeline(“valor sem imposto” =resultado);
+Console.ReadLine;
+}
+
+2) Crie uma aplicação que leia dois numeros inteiros e mostre a soma, a subtração, a multiplicação e divisão do primeiro numero lido pelo segundo.
+
+3) Crie uma aplicação que leia um numero e informe a raiz quadrada deste numero.
+
+4) Crie uma aplicação que leia dois numeros em variaveis chamadas A e B. Troque o valor de A com B e exiba o resultado de cada variavel. Ex:
+A = 2 => A = 3
+B = 3 B = 2
+
+5) Crie uma aplicação que leia um caractere e informe o valor ASCII do Caractere
+
+6) Crie uma aplicação que solicite ao usuário digitar um valor, e calcule 8,5% deste valor,  e exiba o valor com o desconto.
+nessa mesma aplicação solicite ao usuário digitar outro valor , e acrescente a este valor 15%, e exibe o valot total
