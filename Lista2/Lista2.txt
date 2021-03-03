@@ -1,0 +1,12 @@
+1 - As maçãs custam R$ 1,30 cada se forem compradas menos de uma dúzia, e R$ 1,00 se forem
+compradas pelo menos 12. Escreva um programa que leia o número de maçãs compradas, calcule e
+escreva o custo total da compra.
+
+2 - Faça um programa que leia 3 números inteiros e informe qual o maior, qual o segundo maior e qual o terceiro maior.
+
+3 - Um vendedor de uma empresa recebe um salário fixo todo mês. Além do salário, ele recebe uma comissão de 3% sobre o total das vendas até R$ 1.500,00 mais 5% sobre o que ultrapassar este valor. Crie um programa que, dado o salário fixo e o total de vendas que ele efetuou em um mês, calcule o salário final que deverá ser pago a este vendedor.
+
+4 - Faça um programa para verificar se um ano é bissexto ou não. Utilize a regra: Um ano bissexto é divisível por 4, mas não por 100, ou então se é divisível por 400.
+    Exemplo: 1988 é bissexto pois é divisível por 4 e não é por 100; 2000 é bissexto porque é divisível por 400.
+
+5 - Em uma danceteria o preço da entrada sofre variações. Segunda, Terça e Quinta (2, 3 e 5), nesses diasela oferece um desconto de R$10 no preço normal de entrada. Nos dias de músicas ao vivo, o preço da entrada ainda é acrescido em R$7,50 em relação ao preço normal da entrada. Fazer um algoritmo que leia o preço normal da entrada, o dia da semana (1 a 7) e se é dia de música ao vivo (S) ou não (N). Calcular e escrever o preço final que deverá ser pago pela entrada.
