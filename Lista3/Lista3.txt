@@ -1,0 +1,29 @@
+Utiliza as estruturas de repetição para facilitar sua vida.
+todos exercícios devem usar estrutura de repetição
+
+1 - Imprima a seguinte sequencia
+1
+12
+123
+1234
+12345
+123456
+1234567
+
+2 - Imprima a seguinte sequencia
+1******
+12*****
+123****
+1234***
+12345**
+123456*
+1234567
+
+3 - escreva um programa que leia dois numeros inteiros e mostre a divisão
+ do primeiro pelo segundo. Lembre-se que não é possivel dividir qualquer
+ numero por 0.
+
+4 - Leia a idade e altura de 5 pessoas. Informe qual a idade
+ da pessoa mais velha e qual a altura da pessoa mais alta.
+
+5 - Leia a notas de todos os alunos da sala. Informe a média da sala.
