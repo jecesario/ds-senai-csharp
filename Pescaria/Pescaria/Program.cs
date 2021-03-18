@@ -304,9 +304,7 @@ namespace Pescaria {
             for(int i = 1; i < qtJogadores; i++) {
                 if(pontuacaoJogadores[i] == aux) {
                     repetidos++;
-                } else {
-                    aux = pontuacaoJogadores[i];
-                }
+                } 
             }
 
             if(repetidos > 0) {
