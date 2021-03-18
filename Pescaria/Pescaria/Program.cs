@@ -21,21 +21,22 @@ namespace Pescaria {
 
             // Solicitando quantidade de peixes
             Console.Write("Infome o numero de peixes que terá no lago (1-20): ");
-            qtPeixes = int.Parse(Console.ReadLine());
+            
+            qtPeixes = leiaInt();
             // Verificando se o numero de peixes é válido
             while (qtPeixes < 1 || qtPeixes > 20) {
                 Console.Write("Infome o numero de peixes *VÁLIDO* que terá no lago (1-20): ");
-                qtPeixes = int.Parse(Console.ReadLine());
+                qtPeixes = leiaInt();
             }
 
             // Solicitando quantidade de jogadores
             Console.Write("Informe a quantidade de jogadores (max: 6): ");
-            qtJogadores = int.Parse(Console.ReadLine());
+            qtJogadores = leiaInt();
 
             // Verificando se o numero de jogadores é válido
             while (qtJogadores < 1 || qtJogadores > 6) {
                 Console.Write("Informe a quantidade *VÁLIDA* de jogadores (max: 6): ");
-                qtJogadores = int.Parse(Console.ReadLine());
+                qtJogadores = leiaInt();
             }
 
             // Solicitando os nomes do jogadores
@@ -46,12 +47,12 @@ namespace Pescaria {
 
             // Solicitando quantidade de iscas
             Console.Write("Informe a quantidade de iscas (max: 3): ");
-            qtIscas = int.Parse(Console.ReadLine());
+            qtIscas = leiaInt();
 
             // Verificando se o numero de iscas é válido
-            while (qtJogadores < 1 || qtJogadores > 3) {
+            while (qtIscas < 1 || qtIscas > 3) {
                 Console.Write("Informe a quantidade *VÁLIDA* de iscas (max: 3): ");
-                qtIscas = int.Parse(Console.ReadLine());
+                qtIscas = leiaInt();
             }
 
             prencherMatriz();
@@ -183,21 +184,21 @@ namespace Pescaria {
                         // Solicitando uma linha ao jogador X
                         Console.WriteLine("Jogador: " + nomesJogadores[i]);
                         Console.Write("Informe uma linha: ");
-                        linhaNoJogo = int.Parse(Console.ReadLine());
+                        linhaNoJogo = leiaInt();
                         // Verificando se foi informado uma linha válida
                         while (linhaNoJogo < 0 || linhaNoJogo > 4) {
                             Console.Write("Informe uma linha *VÁLIDA*: ");
-                            linhaNoJogo = int.Parse(Console.ReadLine());
+                            linhaNoJogo = leiaInt();
                         }
 
                         // Solicitando uma coluna ao jogador X
                         Console.WriteLine("Jogador: " + nomesJogadores[i]);
                         Console.Write("Informe uma coluna: ");
-                        colunaNoJogo = int.Parse(Console.ReadLine());
+                        colunaNoJogo = leiaInt();
                         // Verificando se foi informado uma coluna válida
                         while (colunaNoJogo < 0 || colunaNoJogo > 9) {
                             Console.Write("Informe uma coluna *VÁLIDA*: ");
-                            colunaNoJogo = int.Parse(Console.ReadLine());
+                            colunaNoJogo = leiaInt();
                         }
 
                         while (validarLinhaColuna() == false) {
@@ -209,21 +210,21 @@ namespace Pescaria {
                         // Solicitando uma linha ao jogador X
                         Console.WriteLine("Jogador: " + nomesJogadores[i]);
                         Console.Write("Informe uma linha: ");
-                        linhaNoJogo = int.Parse(Console.ReadLine());
+                        linhaNoJogo = leiaInt();
                         // Verificando se foi informado uma linha válida
                         while (linhaNoJogo < 0 || linhaNoJogo > 4) {
                             Console.Write("Informe uma linha *VÁLIDA*: ");
-                            linhaNoJogo = int.Parse(Console.ReadLine());
+                            linhaNoJogo = leiaInt();
                         }
 
                         // Solicitando uma coluna ao jogador X
                         Console.WriteLine("Jogador: " + nomesJogadores[i]);
                         Console.Write("Informe uma coluna: ");
-                        colunaNoJogo = int.Parse(Console.ReadLine());
+                        colunaNoJogo = leiaInt();
                         // Verificando se foi informado uma coluna válida
                         while (colunaNoJogo < 0 || colunaNoJogo > 9) {
                             Console.Write("Informe uma coluna *VÁLIDA*: ");
-                            colunaNoJogo = int.Parse(Console.ReadLine());
+                            colunaNoJogo = leiaInt();
                         }
                     }
 
@@ -365,6 +366,14 @@ namespace Pescaria {
             for(int i = 0; i < 20; i++) {
                 Console.WriteLine(i + " - " + r.Next(0, 5) + " - " + r2.Next(0, 10));
             }
+        }
+
+        int leiaInt () {
+            int numero;
+            while(!int.TryParse(Console.ReadLine(), out numero)) {
+                Console.Write("Digite um número inteiro: ");
+            }
+            return numero;
         }
 
         static void Main(string[] args) {
